@@ -1,3 +1,18 @@
+
+
+
 public class MainApp {
-    StringCalculator sc = new StringCalculator();
+    public static void main(String[] args) throws NegativeNumberException {
+
+        StringCalculator c = new StringCalculator();
+        String numbers = "//[ABC";
+
+        String del = c.delimitorDetect(numbers);
+        c.AddNew(numbers,del);
+
+
+    }
+
+
+
 }
